@@ -4,4 +4,78 @@
   <artifactId>testApp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>TestApp</name>
+  
+  
+  <parent>
+	  <groupId>org.springframework.boot</groupId>
+	  <artifactId>spring-boot-starter-parent</artifactId>
+	  <version>2.0.1.RELEASE</version>
+	  <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+  
+  <properties>
+	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	  <java.version>1.8</java.version>
+	  <jjwt.version>0.4</jjwt.version>
+  </properties>
+  
+  <dependencies>
+  	
+  	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-web</artifactId>
+	  </dependency>
+	  <dependency>
+	   	  <groupId>org.springframework.boot</groupId>
+	  	  <artifactId>spring-boot-starter-data-jpa</artifactId>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-test</artifactId>
+		  <scope>test</scope>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.springframework.restdocs</groupId>
+		  <artifactId>spring-restdocs-mockmvc</artifactId>
+		  <scope>test</scope>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.hibernate</groupId>
+		  <artifactId>hibernate-entitymanager</artifactId>
+	  </dependency>
+
+	  <dependency>
+		  <groupId>mysql</groupId>
+		  <artifactId>mysql-connector-java</artifactId>
+	  </dependency>
+	  
+	  
+	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-actuator</artifactId>
+	  </dependency>
+	  <dependency>
+		  <groupId>com.fasterxml.jackson.core</groupId>
+		  <artifactId>jackson-databind</artifactId>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.springframework.mobile</groupId>
+		  <artifactId>spring-mobile-device</artifactId>
+		  <version>1.1.3.RELEASE</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-autoconfigure</artifactId>
+	  </dependency>
+
+	  <dependency>
+		  <groupId>org.springframework</groupId>
+		  <artifactId>spring-beans</artifactId>
+	  </dependency>
+
+  </dependencies>
+  
+  
+  
 </project>
